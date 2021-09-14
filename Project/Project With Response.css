@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+.parent{
+    background-color: black;
+    width: 100%;
+    height: 660.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+}
+.child{
+    /* background-color: rgb(175, 30, 175); */
+    width: 840px;
+    height: 368px;
+    display: flex;
+}
+.text{
+    background-color: hsl(233, 47%, 7%);
+    width: 50%;
+    height: 100%;
+    padding: 40px 40px 0;
+    border-radius: 10px 0 0 10px;
+}
+.firstline{
+    color: white;
+    font-size: 32px;
+}
+.secline{
+    font-size: 12.2px;
+    color: rgba(238, 238, 238, 0.507);
+    padding: 24px 40px 0 0;
+    line-height: 20px;
+}
+.lastline{
+    display: flex;
+    margin-top: 65px;
+}
+.one,
+.two,
+.three{
+    color: white;
+    font-size: 20px;
+    width: calc(300px / 3);
+}
+.last{
+    font-size: 10px;
+    color: rgba(238, 238, 238, 0.507);
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.img{
+    width: 50%;
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 0 10px 10px 0;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+@media (max-width:450px){
+    .child{
+        /* background-color: rgb(175, 30, 175); */
+        width: 280px;
+        height: 550px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text{
+        background-color: hsl(233, 47%, 7%);
+        width: 100%;
+        height: 75%;
+        border-radius: 0 0 10px 10px;
+        padding: 20px 20px 0;
+    }
+       .img{
+        width: 100%;
+        height: 25%;
+        border-radius: 10px 10px 0 0;
+       }
+       .firstline{
+        color: white;
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .secline{
+        font-size: 0.85em;
+        line-height: 1.5em;
+            text-align: center;
+            padding: 24px 0 0 0;
+    }
+    .lastline{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.6em;
+        align-items: center;
+        text-align: center;
+    }
+    .two{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .one,
+.two,
+.three{
+    color: white;
+    font-size: 1.3em;
+    width: calc(300px / 3);
+}
+
+}
