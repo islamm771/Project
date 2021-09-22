@@ -6,7 +6,6 @@ body{
     text-align: center;
     font-size: 18px;
     font-family: 'Bai Jamjuree', sans-serif;
-    /* width: 1440px; */
     margin: auto;
 }
 .upper{
@@ -150,6 +149,7 @@ footer .biimg p{
     text-align: start;
     padding: 10px;
     font-size: 16px;
+    color: hsl(210, 10%, 33%);
     font-family: 'Bai Jamjuree', sans-serif;
 }
 footer .biimg p:hover{
@@ -157,10 +157,11 @@ footer .biimg p:hover{
     color: hsl(171, 66%, 44%);;
 }
 footer .lastdiv{
-    height: 50px;
-    /* position: absolute;
-    right: 14%;
-    top: 38%; */
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 footer .lastdiv img:hover{
     cursor: pointer;
