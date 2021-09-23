@@ -133,7 +133,7 @@ footer{
 }
 footer .logo{
     margin-top: 18px;
-    width:25%;
+    width:20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,13 +143,13 @@ footer .logo img{
     height: 74px;
 }
 footer .biimg{
-    width: calc(500px / 3);
+    width: calc(750px / 3);
     margin-top: 10px;
 }
 footer .biimg p{
     text-align: start;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
     color: hsl(210, 10%, 33%);
     font-family: 'Bai Jamjuree', sans-serif;
 }
@@ -159,7 +159,7 @@ footer .biimg p:hover{
 }
 footer .lastdiv{
     height: 100%;
-    width: 33%;
+    width: 13%;
     display: flex;
     justify-content: center;
     align-items: center;    
