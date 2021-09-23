@@ -126,7 +126,7 @@ button{
     width: calc(100% / 5);
 }
 footer{
-    background-color: #ddd;
+    background-color: #f7f7f7;;
     height: 100px;
     display: flex;
     position: relative;
