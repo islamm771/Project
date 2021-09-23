@@ -133,6 +133,8 @@ button{
     width: calc(100% / 5);
 }
 .clip p{
+    font-family: inherit; 
+    color: hsl(210, 10%, 33%);
     margin: 0 auto 35px;
 }
 footer{
