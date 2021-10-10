@@ -1,0 +1,77 @@
+*{
+	box-sizing: border-box;
+	outline: none;
+	}
+body {background-image:url('8.jfif');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+div{
+	margin-top: 26px;
+}
+.Usernames{
+	display: flex;
+        justify-content: center;
+    	flex-direction: column;
+}
+input{
+	width: 200px;
+	height: 35px;
+	font-size: 16px;
+	padding-left: 8px;
+	border-radius: 8px;
+	border: none;
+}
+.UserBirth select{
+	width: 90px;height: 30px;
+}
+button{
+	width: 200px;
+    padding: 9px;
+    border: none;
+    border-radius: 6px;
+    color: wheat;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+button a{
+	text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.copyright p{
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 27px;
+    margin: 0;
+    background: white;
+}
+@media (min-width:375px) and (max-width:675px)
+{
+	body{
+		margin-top: 55px;
+	}
+	.Usernames{
+		flex-direction: column;
+	}
+	.UserBirth label{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.copyright p{
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 18px;
+    margin: 0;
+    background: white;
+}
+.UserGender label{
+	display: block;
+    margin-bottom: 5px;
+}
+}
