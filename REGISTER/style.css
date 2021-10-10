@@ -1,6 +1,7 @@
 *{
 	box-sizing: border-box;
-	outline: none;
+    	outline: none;
+    	margin: 0;
 	}
 body {background-image:url('8.jfif');
 background-repeat: no-repeat;
@@ -39,16 +40,19 @@ button{
 }
 button a{
 	text-decoration: none;
-    font-size: 18px;
-    color: black;
+    	font-size: 18px;
+    	color: black;
+}
+.copyright{
+	position: relative;
 }
 .copyright p{
-	position: fixed;
-    right: 0;
-    bottom: 0;
-    font-size: 27px;
-    margin: 0;
-    background: white;
+	position: absolute;
+    	right: 0;
+    	bottom: 0;
+    	font-size: 27px;
+    	margin: 0;
+    	background: white;
 }
 @media (min-width:375px) and (max-width:675px)
 {
