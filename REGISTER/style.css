@@ -67,12 +67,7 @@ button a{
 		margin-bottom: 10px;
 	}
 	.copyright p{
-	position: fixed;
-    right: 0;
-    bottom: 0;
     font-size: 18px;
-    margin: 0;
-    background: white;
 }
 .UserGender label{
 	display: block;
