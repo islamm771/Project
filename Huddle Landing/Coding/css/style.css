@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+button{
+    cursor: pointer;
+}
 .heading{
     background-image: url(/images/bg-hero-desktop.svg);
     background-color: hsl(193, 100%, 96%);
@@ -53,7 +56,8 @@ nav{
 .heading .container div .text p{
     width: 460px;
     font-size: 14px;
-    margin-bottom: 20px;
+    font-family: 'Open Sans';
+    margin-bottom: 30px;
 }
 
 .heading .container div .chat{
@@ -168,6 +172,10 @@ footer div .two a{
     color: white;
 }
 
+footer div .two a:hover{
+    text-decoration: underline;
+}
+
 footer div .three{
     display: flex;
     flex-direction: column;
@@ -179,6 +187,10 @@ footer div .three{
 footer div .three a{
     text-decoration: none;
     color: white;
+}
+
+footer div .three a:hover{
+    text-decoration: underline;
 }
 
 
@@ -194,6 +206,10 @@ footer div .four i{
     padding: 6px 6px;
     border-radius: 15px;
     font-size: 13px;
+}
+footer div .four a:hover i{
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
 }
 
 .last{
