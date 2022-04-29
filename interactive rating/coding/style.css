@@ -1,0 +1,125 @@
+:root{
+    --darkgrey--:hsl(216deg 22% 23%);
+    --lightgrey--:hsl(217, 12%, 63%)
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    width: 350px;
+    border-radius: 15px;
+}
+.card .star{
+    background-color: var(--darkgrey--);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h2{
+    color: hsl(0, 0%, 100%);
+}
+.card p{
+    color: var(--lightgrey--);
+    max-width: 380px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.card .btn{
+    margin-top: 25px;
+}
+.card .btn .Btn{
+    background-color: var(--darkgrey--);
+    color: var(--lightgrey--);
+    border: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card .btn .BTN{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.card .btn .Btn:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.card .submit{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: 0;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.card .submit:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+
+.thanks{
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: cursive;
+    display: none;
+}
+.thanks #selected{
+    display: flex;
+    justify-content: center;
+}
+.thanks #selected p{
+    background-color: var(--darkgrey--);
+    color: hsl(25, 97%, 53%);
+    width: 195px;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.thanks h2{
+    color: white;
+    margin-top: 0;
+}
+.thanks p{
+    color: var(--lightgrey--);
+    max-width: 380px;
+    line-height: 20px;
+    font-size: 14px;
+}
