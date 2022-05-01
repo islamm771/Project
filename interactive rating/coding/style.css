@@ -132,6 +132,7 @@ body{
     .card .btn .Btn {
         width: 34px;
         height: 34px;
+        margin-right: 5px;
     }
     .card .btn .BTN{
         background-color: hsl(25, 97%, 53%);
