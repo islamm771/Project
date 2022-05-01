@@ -123,3 +123,26 @@ body{
     line-height: 20px;
     font-size: 14px;
 }
+
+
+@media (max-width: 767px) {
+    .card{
+        width: 280px;
+    }
+    .card .btn .Btn {
+        width: 34px;
+        height: 34px;
+    }
+    .card .btn .BTN{
+        background-color: hsl(25, 97%, 53%);
+        width: 34px;
+        height: 34px;
+    }
+    .card .submit{
+        width: 240px;
+    }
+    .thanks{
+        width: 280px;
+    }
+    
+}
