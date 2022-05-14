@@ -1,0 +1,186 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.btn-check:focus+.btn, .btn:focus{
+    box-shadow: none;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover{
+    color: var(--yellow-color);
+}
+.navbar .nav-item a{
+    color: white;
+}
+.navbar .nav-item a.active,
+.navbar .nav-item a:hover,
+.navbar .nav-item a:active,
+.navbar .nav-item a:focus{
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    border-color: white;
+}
+
+.navbar span{
+    border-left: 1px solid #33d1cc;
+}
+.navbar span svg{
+    color: #33d1cc;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+
+.landing{
+    background-color: var(--dark-color);
+    height: calc(100vh - 70px);
+}
+
+.main-title::after{
+    content:"";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position:absolute;
+    bottom: -20px;
+    left: 50%;
+    transform:translateX(-50%) ;
+}
+
+.feature .icon-holder{
+    height: 200px;
+}
+.feature .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feature .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.feature .icon-holder .icon{
+    color: var(--green-color);
+}
+.feature .feat h4{
+    color: var(--yellow-color);
+}
+.our-work{
+    background-color: var(--section-color);
+}
+
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li.active{
+    background-color: #ff3150 !important;
+    color: #ffc400 !important;
+}
+.our-work ul li:not(.active):hover{
+    color: #ff3150 !important;
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: "Application";
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #33d1cc9e;
+    position: absolute;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+.stuff .describtion{
+    max-width: 500px;
+}
+.team{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .box h4{
+    background-color: var(--green-color);
+}
+.start-project{
+    background-color: var(--dark-color);
+}
+.blog .box{
+    border:1px solid rgba(0,0,0,.125)
+}
+.subscibe{
+    background-color: var(--yellow-color);
+}
+
+.subscibe input[type="text"]{
+    border: 0;
+    border-bottom: 1px solid white;
+}
+.subscibe input[type="text"]:focus{
+    outline: none;
+}
+.subscibe ::placeholder{
+    color: white;
+}
+.subscibe input[type="submit"]{
+    background-color: var(--dark-color);
+    color:var(--yellow-color)
+} 
+
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright > span{
+    color:var(--green-color)
+}
+.footer .copyright div span{
+    color :var(--yellow-color);
+}
+.footer .contact ul svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .icon li a .facebook{
+    background-color: #1877f2;
+}
+.footer .icon li a .twitter{
+    background-color: #1da1f2;
+}
+.footer .icon li a .linkedin{
+    background-color: #0077b5;
+}
+.footer .icon li a .youtube{
+    background-color: #ff0000;
+}
