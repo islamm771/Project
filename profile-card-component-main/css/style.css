@@ -1,0 +1,109 @@
+:root{
+    --back-color:hsl(185, 75%, 39%);
+    --pupple-color:hsl(185deg 71% 43%);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--back-color);
+    overflow: hidden;
+    height: 100vh;
+    font-family:Kumbh Sans;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pupple-top , .pupple-bottom{
+    background-color: var(--pupple-color);
+    width:500px;
+    height:500px;
+}
+.pupple-top{
+    position: relative;
+    top: -100px;
+    left: -150px;
+    border-radius: 0 0 400px 0;
+}
+.pupple-bottom{
+    position: relative;
+    bottom: 200px;
+    right: -800px;
+    border-radius: 400px 0 0 0;
+}
+.card{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: white;
+    border-radius: 15px;
+}
+.upper-card{
+    height: 120px;
+    background-image: url('/images/bg-pattern-card.svg');
+    border-radius: 15px 15px 0 0;
+}
+.lower-card img{
+    margin-top: -45px;
+    border-radius: 50%;
+}
+.lower-card p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+.lower-card p span{
+    font-weight: normal;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.lower-card span{
+    display: inline-block;
+    margin-bottom: 25px;
+    color:hsl(0, 0%, 59%) ;
+}
+.lower-card div{
+padding: 15px;
+}
+.lower-card div span{
+    margin: 0 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.lower-card div span span{
+    font-size:10px;
+    color:hsl(0, 0%, 59%);
+    letter-spacing:1.5px;
+}
+
+@media (max-width: 768px){
+    body{
+        height: auto;
+    }
+    .lower-card div span{
+        margin-bottom:10px;
+    }
+    .lower-card div span:last-child{
+        margin-bottom: 0;
+    }
+    .pupple-top , .pupple-bottom{
+    width:200px;
+    height:200px;
+}
+.pupple-top{
+    top: 0;
+    left: 0;
+    border-radius: 0 0 200px 0;
+}
+.pupple-bottom{
+    bottom: -410px;
+    right: -174px;
+    border-radius: 200px 0 0 0;
+}
+}
