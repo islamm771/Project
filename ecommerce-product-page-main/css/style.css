@@ -3,15 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-nav{
-    display: flex;
-    align-items: center;
+nav .container{
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-}
-.container{
-    width: 1340px;
+    position: relative;
+
 }
 nav ul{
     margin: 0;
@@ -19,30 +15,63 @@ nav ul{
     position: relative;
 }
 nav ul li{
-    color: hsl(219, 9%, 45%);
     list-style: none;
     display: inline-block;
     margin: 0 10px;
     cursor: pointer;
+    position: relative;
 }
-nav ul li:hover::before{
+nav ul li a{
+    color: hsl(219, 9%, 45%) !important;
+
+}
+nav ul li a:hover::before{
     content: "";
     position: absolute;
-    top: 55px;
-    width: 50px;
+    bottom: -27px;
+    width: calc(100% - 1rem);
     height: 3px;
     background-color: hsl(26, 100%, 55%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width:992px){
+    nav ul li a:hover::before{
+    content: "";
+    width: 0;
+}
+}
+@media (max-width:992px){
+    .show{
+    position: absolute;
+    top: 97px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    display: block !important;
+    box-shadow: 0px 0px 7px 6px #f5f5f5;
+}
+nav ul {
+    padding: 0.5rem;
+}
+nav ul li {
+    padding: 5px;
 }
 
+}
 nav .avatar{
-    flex: 1;
     text-align: end;
     position: relative;
 }
-nav .avatar .num-product{
+nav .avatar .svg{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+nav .avatar .svg .num-product{
     position: absolute;
-    right: 86px;
-    top: 7px;
+    right: -3px;
+    top: -4px;
     width: 18px;
     height: 14px;
     border-radius: 45%;
@@ -51,22 +80,18 @@ nav .avatar .num-product{
     text-align: center;
     font-size: 9.5px;
 }
-nav .avatar .svg{
-    display: inline-block;
-    cursor: pointer;
-}
 nav .avatar img{
     width: 50px;
-    margin-left: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
 nav .avatar img:hover{
     border: 2px solid hsl(26, 100%, 55%);
 }
-nav .avatar .card{
+nav .card{
     position:absolute;
-    right: 40px;
+    top: 98px;
+    right: 10px;
     width: 320px;
     height: 200px;
     text-align: left;
@@ -76,50 +101,50 @@ nav .avatar .card{
     box-shadow:0px 7px 8px 3px #ddd;
     display: none;
 }
-nav .avatar .open-card{
+nav .open-card{
     display: block;
 }
 
-nav .avatar .card h3{
+nav .card h3{
     font-size: 19px;
     padding: 12px 20px;
     border-bottom: 1px solid #EEE;
 }
-nav .avatar .card .uCard .after-add{
+nav .card .uCard .after-add{
     display: flex;
     flex-wrap: wrap;
     height: 41%;
     padding: 0 20px;
     display: none;
 }
-nav .avatar .card .uCard .show-add{
+nav  .card .uCard .show-add{
     display: flex;
 }
 
-nav .avatar .card .uCard div{
+nav .card .uCard div{
     padding: 3px 10px;
 }
-nav .avatar .card .uCard img{
+nav .card .uCard img{
     width: 60px;
     height: 60px;
     margin: 0;
     border-radius: 4px;
 }
-nav .avatar .card .uCard .empty{
+nav .card .uCard .empty{
     font-size: 18px;
     font-weight: bold;
 }
-nav .avatar .card .uCard p{
+nav .card .uCard p{
     color: hsl(219, 9%, 45%);
     font-size: 12.6px;
     margin-bottom: 0;
     text-align: center;
 }
-nav .avatar .card .uCard span{
+nav  .card .uCard span{
     color: hsl(219, 9%, 45%);
     font-size: 14px;
 }
-nav .avatar .card .uCard .checkout{
+nav  .card .uCard .checkout{
     background-color: hsl(26, 100%, 55%);
     font-weight: bold;
     color: white;
@@ -135,36 +160,32 @@ nav .card .uCard .empty-del{
 }
 
 .section{
-    display: flex;
     justify-content: center;
-    padding: 80px 0;
-}
-.section .img {
-    flex-basis: 500px;
+    padding: 3rem 0;
 }
 .section .img img{
-    width: 380px;
     border-radius: 10px;
     cursor: pointer;
 }
 .section .img .other-pic{
     margin-top: 20px;
-    width: 380px;
     text-align: center;
+    
 }
 .section .img .other-pic img{
+    display: inline-block;
     width: 60px;
-    margin-right: 20px;
 }
-.selected{
-    opacity: 0.5;
+.section .img .other-pic > div.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    background-color: #ffffff96;
+    border-radius: 10px;
     border: 2px solid hsl(26, 100%, 55%);
-}
-
-
-.section .info{
-    width: 40%;
-    padding-top: 50px;
 }
 
 .section .info > span{
@@ -177,12 +198,10 @@ nav .card .uCard .empty-del{
 }
 .section .info h2{
     font-size: 40px;
-    width: 370px;
     font-weight: bold;
     margin-bottom: 25px;
 }
 .section .info p{
-    width: 405px;
     color: hsl(219, 9%, 45%);
 }
 .section .info .after-offer .price-after{
@@ -249,13 +268,9 @@ nav .card .uCard .empty-del{
     box-shadow: 1px 4px 4px 0px hsl(26deg 100% 55%);;
 }
 
-
-
-
-
 .full{
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    height: 100%;
     top: 0;
     background-color: #000000d4;
     width: 100%;
@@ -272,17 +287,65 @@ nav .card .uCard .empty-del{
 .full .other-pic{
     margin-top: 20px;
     width: 380px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.full .other-pic > div{
+    cursor: pointer;
+}
+.full .other-pic >div.active::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: calc(100%);
+    background-color: #ffffff96;
+    width: calc(100%);
+    border-radius: 10px;
+    border: 2px solid hsl(26, 100%, 55%);
 }
 .full .other-pic img{
     width: 60px;
-    margin-right: 20px;
     border-radius: 10px;
-}
-.full .other-pic .selected{
-    opacity: 0.5;
-    border: 2px solid hsl(26, 100%, 55%);
 }
 .show-full{
     display: flex;
+}
+.full .content{
+    position: relative;
+}
+.full .prev,.full .next{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+}
+.full .prev{
+    left: -25px;
+}
+.full .next{
+    right: -25px;
+}
+.full span{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.full span:hover{
+    color: #d81616;
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .full img {
+            width: 300px;
+        }
 }
